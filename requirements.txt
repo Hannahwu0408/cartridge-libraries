@@ -1,0 +1,17 @@
+# Core: frozen Qwen3 base model + trainable KV cartridges
+torch
+transformers>=4.51          # Qwen3 support
+accelerate                  # device_map placement
+bitsandbytes                # 8-bit Adam for training the cartridge pool
+
+# Data, retrieval and analysis
+datasets                    # 2WikiMultihopQA download
+huggingface_hub
+numpy
+scikit-learn                # GMM topic layer
+sentence-transformers       # bge-large retrieval index
+matplotlib                  # figures
+
+# Orchestration and evaluation
+langgraph                   # chain controller as a StateGraph; ReAct agent
+anthropic                   # blind LLM-judge audit and frontier oracle (needs ANTHROPIC_API_KEY)

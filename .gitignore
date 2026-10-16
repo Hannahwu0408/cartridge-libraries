@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# Generated outputs: trained cartridges, run results, figures-in-progress
+cartridges/
+results/
+*.pt
+*.pth
+*.safetensors
+*.log
+
+# Generated self-study corpora (15-100 MB each; regenerate with scripts/generate_selfstudy_data.py)
+data/**/ss_*.jsonl
+data/**/saturation_*.json
+
+# Third-party benchmark data, regenerated deterministically by the prepare scripts
+data/2wiki_raw/
+data/2wiki_scale/*.jsonl
+data/2wiki_v2/
+data/hipporag/
+data/squad/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+.claude/
